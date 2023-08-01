@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.terminal-container {
+  width: 100%;
+  cursor: text;
+  background-color: #171717;
+}
+
+.terminal-content {
+  padding: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  color: #aaa;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-banner {
+  color: rgb(13, 241, 6);
+  text-shadow: 0 0 5px teal;
+  line-height: normal;
+  font-weight: bold;
+  font-size: calc(1vw + 3px);
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  .terminal-banner {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .terminal-banner {
+    font-size: 6px;
+  }
+}
+
+.terminal-welcome-message {
+  margin-bottom: 10px;
+}
+
+.terminal-command-record {
+  scroll-margin: 15px;
+}
+
+.terminal-input-area {
+  display: inline-flex;
+  width: 100%;
+  align-items: left;
+}
+
+.terminal-prompt {
+  margin-right: 5px;
+  display: inline-flex;
+}
+
+.terminal-prompt-arrow {
+  color: rgb(13, 241, 6);
+  font-weight: bold;
+}
+
+.terminal-prompt-text {
+  color: rgb(4, 238, 255);
+  font-weight: bold;
+}
+
+.terminal-input {
+  font-family: inherit;
+  font-size: inherit;
+  font-size: inherit;
+  color: rgb(240, 191, 129);
+  background: transparent;
+  border: 0px;
+  outline: none; /* no highlight on focus */
+  width: 10%;
+}
+
+.terminal-error {
+  color: red;
+}
+
+.terminal-highlight {
+  color: #eeeeee;
+  text-shadow: 0 0 4px #eeeeee;
+}
+
+a {
+  color: #dea5f5;
+}
+a:hover {
+  color: black;
+  background-color: #c4a5f5;
+  text-decoration: none;
+}
+
+.command {
+  color: #eeeeee;
+  text-shadow: 0 0 4px #eeeeee;
+}
